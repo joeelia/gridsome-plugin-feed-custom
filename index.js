@@ -1,8 +1,10 @@
 const path = require('path')
 const url = require('url')
 const fs = require('fs-extra')
-const Feed = require('feed').Feed
+import Podcast from 'podcast';
 const moment = require('moment')
+
+
 
 function urlWithBase (path, base, enforceTrailingSlashes) {
 	if (enforceTrailingSlashes && !path.endsWith('/') && !/\.[a-z]{1,4}$/i.test(path)) {
@@ -60,7 +62,7 @@ module.exports = function (api, options) {
 		if (jsonOutput) {
 			feedOptions.feedLinks.json = urlWithBase(pathPrefix + jsonOutput, siteUrl)
 		}
-		const feed = new Feed(feedOptions)
+		const feed = new Podcast(feedOptions);
 
 		let feedItems = []
 		for (const contentType of options.contentTypes) {
