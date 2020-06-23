@@ -4,14 +4,13 @@
   "description": "Generate RSS/Atom/JSON feeds from generated Gridsome content.",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://github.com/onecrayon/gridsome-plugin-feed#readme",
-  "repository": "https://github.com/onecrayon/gridsome-plugin-feed",
+  "repository": "https://github.com/joeelia/gridsome-plugin-feed-podcast",
   "keywords": [
     "gridsome",
     "gridsome-plugin"
   ],
   "dependencies": {
-    "feed-podcast": "joeelia/feed-podcast#master",
+    "feed-podcast": "git://github.com/joeelia/feed-podcast.git#0978bd7a45c1e1fcc8cf9b0890caddb5362941f6",
     "fs-extra": "^8.1.0",
     "micromatch": "^4.0.2",
     "moment": "^2.24.0"
