@@ -11,7 +11,7 @@
     "gridsome-plugin"
   ],
   "dependencies": {
-    "feed": "joeelia/feed-podcast#master",
+    "feed-podcast": "joeelia/feed-podcast#master",
     "fs-extra": "^8.1.0",
     "micromatch": "^4.0.2",
     "moment": "^2.24.0"
