@@ -1,7 +1,7 @@
 const path = require('path')
 const url = require('url')
 const fs = require('fs-extra')
-const Podcast = require('podcast').Feed
+const Podcast = require('podcast')
 const moment = require('moment')
 
 
