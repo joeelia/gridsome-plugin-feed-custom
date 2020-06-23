@@ -1,7 +1,7 @@
 const path = require('path')
 const url = require('url')
 const fs = require('fs-extra')
-import Podcast from 'podcast';
+const Podcast = require('podcast').Feed
 const moment = require('moment')
 
 
