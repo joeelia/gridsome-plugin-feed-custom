@@ -100,19 +100,9 @@ module.exports = function (api, options) {
 			}
 			feed.addItem(item)
 		}
-
-		if (rssOutput) {
-			console.log(`Generate RSS feed at ${rssOutput}`)
-			fs.outputFile(path.join(config.outDir, rssOutput), feed.rss2())
-		}
-		if (atomOutput) {
-			console.log(`Generate Atom feed at ${atomOutput}`)
-			fs.outputFile(path.join(config.outDir, atomOutput), feed.atom1())
-		}
-		if (jsonOutput) {
-			console.log(`Generate JSON feed at ${jsonOutput}`)
-			fs.outputFile(path.join(config.outDir, jsonOutput), feed.json1())
-		}
+		//const xml = feed.buildXml();
+		fs.outputFile(path.join(config.outDir, jsonOutput), feed.buildXml())
+		
 	})
 }
 
