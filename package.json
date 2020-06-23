@@ -10,7 +10,7 @@
     "gridsome-plugin"
   ],
   "dependencies": {
-    "feed-podcast": "git://github.com/joeelia/feed-podcast.git#master",
+    "feed-custom": "git://github.com/joeelia/feed-custom.git#master",
     "fs-extra": "^8.1.0",
     "micromatch": "^4.0.2",
     "moment": "^2.24.0"
