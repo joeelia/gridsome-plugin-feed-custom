@@ -4,8 +4,8 @@ Generate an RSS, Atom, and/or JSON feed for your Gridsome site.
 
 ## Install
 
-- `yarn add gridsome-plugin-feed`
-- `npm install gridsome-plugin-feed`
+- `yarn add gridsome-plugin-podcast-feed`
+- `npm install gridsome-plugin-podcast-feed`
 
 ## Example
 
@@ -13,10 +13,9 @@ Generate an RSS, Atom, and/or JSON feed for your Gridsome site.
 module.exports = {
   plugins: [
     {
-      use: 'gridsome-plugin-feed',
+      use: 'gridsome-plugin-podcast-feed',
       options: {
-        // Required: array of `GraphQL` type names you wish to include
-        contentTypes: ['BlogPost', 'NewsPost'],
+        contentTypes: ['Podcast'],
         // Optional: any properties you wish to set for `Feed()` constructor
         // See https://www.npmjs.com/package/feed#example for available properties
         feedOptions: {
@@ -25,18 +24,6 @@ module.exports = {
         },
         // === All options after this point show their default values ===
         // Optional; opt into which feeds you wish to generate, and set their output path
-        rss: {
-          enabled: true,
-          output: '/feed.xml'
-        },
-        atom: {
-          enabled: false,
-          output: '/feed.atom'
-        },
-        json: {
-          enabled: false,
-          output: '/feed.json'
-        },
         // Optional: the maximum number of items to include in your feed
         maxItems: 25,
         // Optional: an array of properties passed to `Feed.addItem()` that will be parsed for
